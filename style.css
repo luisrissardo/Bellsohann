@@ -1,0 +1,347 @@
+*{
+    box-sizing: border-box;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+html{
+    scroll-behavior: smooth;
+}
+.scroll{
+    opacity: .5;
+}
+b{
+    color: #84cd57;
+}
+h1, h2, h3, h4, h5, h6, p{
+    font-weight: 300;
+}
+body{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Jura';
+    width: 100%;
+    max-width: 100vw;
+    transition: 0s;
+    background-color: black;
+    color: white;
+    overflow-x: hidden;
+}
+.off{
+    background-color: transparent;
+}
+header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15%;
+    position: fixed;
+    transition: .5s;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.308);
+}
+header:hover{
+    background-color: rgb(44, 44, 44);
+    border-bottom: 2px #84cd57 solid;
+}
+header:hover nav{
+    border: 0px;
+}
+header:hover .icons-header{
+    opacity: 1;
+}
+.icons-header{
+    width: 30vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: .5s;
+    overflow: hidden;
+}
+.icons-header a{ 
+    width: 100%;
+    padding-left: 20%;
+    align-items: center;
+    display: flex;
+    height: fit-content;
+    height: 100%;
+}
+.icons-header a img{
+    width: 25%;
+}
+.name-header{
+    width: 40vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-family: "Italiana", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    transition: .6s;
+}
+#nome.hidden{
+    opacity: 0;
+}
+nav{
+    width: 30vw;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    transition: .5s;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 4rem;
+}
+nav ul li a{
+    font-size: 22px;
+    color: white;
+    text-decoration: none;
+    transition: .5s;
+}
+nav ul li a:hover{
+    color: #84cd57;
+}
+section{
+    height: 100vh;
+    width: 100%;
+}
+.slider-frame{
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+}
+@keyframes slide_animation{
+    0% {left:0px;}
+    10% {left:0px;}
+    20% {left:1800px;}
+    30% {left:1800px;}
+    40% {left: 3960px;}
+    50% {left: 3960px;}
+    60% {left: 1800px;}
+    70% {left: 1800px;}
+    80% {left: 0px;}
+    90% {left: 0px;}
+    100% {left:0px;}
+}
+@-webkit-keyframes slide_animation{
+    0% {left:0px;}
+    10% {left:0px;}
+    20% {left:1800px;}
+    30% {left:1800px;}
+    40% {left: 3960px;}
+    50% {left: 3960px;}
+    60% {left: 1800px;}
+    70% {left: 1800px;}
+    80% {left: 0px;}
+    90% {left: 0px;}
+    100% {left:0px;}
+}
+.slide-images{
+    width: 5940px;
+    height: 800px;
+    margin: 0 0 0 -3960px;
+    position: relative;
+    -webkit-animation-name: slide_animation;
+    animation-name: slide_animation;
+    -webkit-animation-duration: 33s;
+    animation-duration: 33s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+    -webkit-animation-play-state: running;
+    animation-play-state: running;
+}
+.img-container{
+    height: 800px;
+    width: 1980px;
+    position: relative;
+    float: left;
+}
+.img-container img{
+    width: 100%;
+}
+.abertura{
+    background-image: url(img/Imagem\ do\ WhatsApp\ de\ 2024-10-02\ à\(s\)\ 23.05.23_fb267a35.jpg);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: bottom;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    overflow: hidden;
+}
+.abertura h1{
+    font-size: 54px;
+    font-family: 'Italiana', sans-serif;
+}
+.abertura p{
+    font-size: 30px;
+}
+.text-bl{
+    -background-color: red;
+    width: 50%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    box-sizing: border-box;
+    padding-left: 5%;
+    color: black;
+}
+.description{
+    width: 50%;
+    height: 30%;
+    -background-color: blue;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    padding-right: 5%;
+    color: black;
+}
+.description a{
+    color: yellow;
+}
+button{
+    margin-top: -40px;
+    width: 30%;
+    height: 30%;
+    font-size: 30px;
+    font-family: 'Jura', sans-serif;
+    background-color: transparent;
+    transition: .6s;
+}
+button:hover{
+    cursor: pointer;
+    border-radius: 30px;
+    background-color: black;
+    color: white;
+    border-color: white;
+}
+.abertura2{
+    background-image: url(img/Imagem\ do\ WhatsApp\ de\ 2024-10-02\ à\(s\)\ 23.05.24_0da48fe0.jpg);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: bottom;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    overflow: hidden;
+}
+.abertura2 h1{
+    font-size: 54px;
+    font-family: 'Italiana', sans-serif;
+}
+.abertura2 p{
+    font-size: 30px;
+}.description2{
+    width: 50%;
+    height: 30%;
+    -background-color: blue;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    padding-right: 5%;
+    color: black;
+}
+.description2 a{
+    color: gray;
+}
+.abertura3{
+    background-image: url(img/Imagem\ do\ WhatsApp\ de\ 2024-10-02\ à\(s\)\ 23.05.25_73a43514.jpg);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: bottom;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    overflow: hidden;
+}
+.abertura3 h1{
+    font-size: 54px;
+    font-family: 'Italiana', sans-serif;
+}
+.abertura3 p{
+    font-size: 30px;
+}
+.description3{
+    width: 50%;
+    height: 30%;
+    -background-color: blue;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    padding-right: 5%;
+    color: black;
+}
+.description3 a{
+    color: rosybrown;
+}
+.slider-frame2{
+    overflow: hidden;
+    height: 100%;
+    width: 100vw;
+}
+@keyframes slide_animation2{
+    0% {left:0px;}
+    10% {left:0px;}
+    20% {left:1570px;}
+    30% {left:1570px;}
+    40% {left: 3140px;}
+    50% {left: 3140px;}
+    60% {left: 4710px;}
+    70% {left: 4710px;}
+    80% {left: 3140px;}
+    90% {left: 1570px;}
+    100% {left:0px;}
+}
+@-webkit-keyframes slide_animation2{
+    0% {left:0px;}
+    10% {left:0px;}
+    20% {left:1570px;}
+    30% {left:1570px;}
+    40% {left: 3140px;}
+    50% {left: 3140px;}
+    60% {left: 4710px;}
+    70% {left: 4710px;}
+    80% {left: 3140px;}
+    90% {left: 1570px;}
+    100% {left:0px;}
+}
+.slide-images2{
+    width: 10000px;
+    height: 800px;
+    margin: 0 0 0 -4370px;
+    position: relative;
+    -webkit-animation-name: slide_animation2;
+    animation-name: slide_animation2;
+    -webkit-animation-duration: 80s;
+    animation-duration: 80s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+    -webkit-animation-play-state: running;
+    animation-play-state: running;
+}
+.img-container2{
+    height: 800px;
+    width: 1980px;
+    position: relative;
+    float: left;
+    margin-left: -397px;
+}
+.img-container2 img{
+    width: 80%;
+}
